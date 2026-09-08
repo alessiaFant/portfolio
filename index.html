@@ -1,0 +1,152 @@
+<title>Alessia Fant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF8; --ink:#1A1A17; --soft:#67615A; --faint:#9C968B;
+    --line:#E6E3DC; --accent:#34489E;
+  }
+  :root:not([data-theme="light"]){@media(prefers-color-scheme:dark){
+    --paper:#141310; --ink:#F1EEE6; --soft:#ABA598; --faint:#7C766B;
+    --line:#2C2A22; --accent:#93A2EA;
+  }}
+  :root[data-theme="dark"]{
+    --paper:#141310; --ink:#F1EEE6; --soft:#ABA598; --faint:#7C766B;
+    --line:#2C2A22; --accent:#93A2EA;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
+  a{color:inherit;text-decoration:none;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  header.hero{padding:72px 0 30px;}
+  .hero .top{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--soft);display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:40px;}
+  .hero .top a:hover{color:var(--accent);}
+  .hero h1{font-size:clamp(38px,7vw,64px);font-weight:800;letter-spacing:-0.03em;line-height:1;}
+  .hero .role{margin-top:14px;font-size:clamp(16px,2.4vw,20px);font-weight:600;color:var(--ink);}
+  .hero .thesis{margin-top:20px;max-width:60ch;font-size:16.5px;color:var(--soft);line-height:1.65;}
+  .hero .thesis b{color:var(--ink);font-weight:700;}
+  .hero .range{margin-top:20px;max-width:62ch;font-size:14px;color:var(--faint);font-family:'JetBrains Mono',monospace;line-height:1.7;}
+
+  section{padding:38px 0 4px;border-top:1px solid var(--line);margin-top:30px;}
+  .sh{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;}
+  .sh .n{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);font-weight:600;}
+  .sh h2{font-size:15px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;}
+  .sh .note{margin-left:auto;font-size:13px;color:var(--faint);}
+
+  .item{display:grid;grid-template-columns:264px minmax(0,1fr) 216px;align-items:baseline;gap:4px 24px;padding:14px 0;border-bottom:1px solid var(--line);}
+  section .item:last-of-type{border-bottom:none;}
+  .item .nm{font-weight:700;font-size:17px;letter-spacing:-0.01em;}
+  a.item:hover .nm{color:var(--accent);}
+  a.item:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  .item .dd{font-size:14px;color:var(--soft);line-height:1.5;}
+  .item .rr{display:grid;grid-template-columns:1fr 60px;align-items:baseline;gap:14px;}
+  .item .sec{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:0.03em;text-align:right;}
+  .item .go{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--accent);font-weight:500;text-align:right;}
+  .item .go.n{color:var(--faint);}
+  .item .tag{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--faint);border:1px solid var(--line);padding:1px 6px;margin-left:8px;}
+
+  .gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:6px;}
+  figure{border:1px solid var(--line);background:var(--paper);}
+  figure img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line);}
+  figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9px 12px;}
+  figcaption .fn{font-weight:700;font-size:13.5px;}
+  figcaption .fs{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--faint);text-transform:uppercase;}
+  .also{margin-top:20px;font-size:14px;color:var(--soft);}
+  .also b{color:var(--ink);font-weight:600;}
+
+  footer{padding:48px 0 72px;margin-top:30px;border-top:1px solid var(--line);}
+  footer .big{font-size:clamp(22px,4vw,32px);font-weight:800;letter-spacing:-0.02em;}
+  footer .fc{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 18px;font-family:'JetBrains Mono',monospace;font-size:14px;}
+  footer .fc a{color:var(--accent);}
+  footer .fc a:hover{text-decoration:underline;}
+  footer .note{margin-top:18px;font-size:11.5px;color:var(--faint);}
+
+  @media(max-width:720px){
+    .item{grid-template-columns:1fr;gap:2px;}
+    .item .rr{display:flex;gap:14px;margin-top:2px;}
+    .item .sec,.item .go{text-align:left;}
+    .sh .note{display:none;}
+  }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="top">
+      <span>Available for contract &amp; retainer</span>
+      <a href="mailto:alessia.fant93@gmail.com">alessia.fant93@gmail.com</a>
+      <a href="https://linkedin.com/in/afant">linkedin.com/in/afant</a>
+      <span>Remote / Italy / worldwide</span>
+    </div>
+    <h1>Alessia Fant</h1>
+    <div class="role">Front-end &amp; E-commerce Developer, AI-augmented</div>
+    <p class="thesis">I build <b>front-ends</b> and complete websites and stores, <b>WordPress and Shopify</b>, across a wide range of industries. I keep full technical control, use AI as part of the workflow with code review, and take on consulting when a client needs help with the approach as well as the build. <b>6+ years, 30+ clients, remote.</b></p>
+    <p class="range">Shipped for: wine &amp; hospitality / interior design / beauty / aviation finance / optometry / restaurants / sport / industrial / music &amp; web3.</p>
+  </header>
+
+  <section>
+    <div class="sh"><span class="n">01</span><h2>Build &amp; manage</h2><span class="note">live client sites I develop and keep running</span></div>
+    <div class="item"><div class="nm">Davines</div><div class="dd">Enterprise product content across Storyblok (headless CMS) and Salsify (PXM), bilingual IT/EN.</div><div class="rr"><span class="sec">Beauty</span><span class="go n">Ongoing</span></div></div>
+    <a class="item" href="https://castellodimontecavallo.it/" target="_blank" rel="noopener"><div class="nm">Castello di Montecavallo</div><div class="dd">Site restyle, wine e-commerce, tasting &amp; B&amp;B booking system, SEO.</div><div class="rr"><span class="sec">Wine</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.idwitalia.com/en/" target="_blank" rel="noopener"><div class="nm">IDW Italia</div><div class="dd">Bilingual (IT/EN) site, CMS, editorial and SEO. Italy, Prague, Dubai.</div><div class="rr"><span class="sec">Interior design</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.creminelli.it/" target="_blank" rel="noopener"><div class="nm">Creminelli</div><div class="dd">E-commerce and website build and maintenance.</div><div class="rr"><span class="sec">Food</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://carrozzeriacrestani.it/" target="_blank" rel="noopener"><div class="nm">Carrozzeria Crestani</div><div class="dd">Business website design and build.</div><div class="rr"><span class="sec">Automotive</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://trimopticalcentre.ie/" target="_blank" rel="noopener"><div class="nm">Trim Optical Centre</div><div class="dd">Full site, content and SEO for a family optometry practice, Ireland.</div><div class="rr"><span class="sec">Optometry · IE</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://optolab3d.com/" target="_blank" rel="noopener"><div class="nm">Optolab 3D</div><div class="dd">Marketing site for a vision-screening technology company.</div><div class="rr"><span class="sec">Healthtech</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.pralino.it/" target="_blank" rel="noopener"><div class="nm">Pralino Sport</div><div class="dd">Website for sports and swimming facilities across Piedmont.</div><div class="rr"><span class="sec">Sport</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://toptenda.it/" target="_blank" rel="noopener"><div class="nm">Top Tenda</div><div class="dd">Website for awnings and outdoor shading.</div><div class="rr"><span class="sec">Outdoor</span><span class="go">Visit ↗</span></div></a>
+  </section>
+
+  <section>
+    <div class="sh"><span class="n">02</span><h2>Built for agencies</h2><span class="note">delivered for studios &amp; agencies</span></div>
+    <a class="item" href="https://dts-lighting.it/underwater-lighting-solutions/" target="_blank" rel="noopener"><div class="nm">DTS Lighting</div><div class="dd">Underwater Solutions landing page.</div><div class="rr"><span class="sec">Lighting</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://capellilounge.it/" target="_blank" rel="noopener"><div class="nm">Capelli Lounge</div><div class="dd">Salon website, Turin.</div><div class="rr"><span class="sec">Beauty</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://loyaltyquest.com/" target="_blank" rel="noopener"><div class="nm">LoyaltyQuest</div><div class="dd">B2B loyalty platform landing page, responsive across devices.</div><div class="rr"><span class="sec">SaaS</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.ristorantecolapasta.it/" target="_blank" rel="noopener"><div class="nm">Colapasta</div><div class="dd">Seafood restaurant site with booking and events, Collegno (Turin).</div><div class="rr"><span class="sec">Restaurant</span><span class="go">Visit ↗</span></div></a>
+  </section>
+
+  <section>
+    <div class="sh"><span class="n">03</span><h2>Product builds</h2><span class="note">built within a development flywheel</span></div>
+    <a class="item" href="https://bello.ninja/" target="_blank" rel="noopener"><div class="nm">Bello</div><div class="dd">Web design studio site.</div><div class="rr"><span class="sec">Studio</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://compliancejunction.com/" target="_blank" rel="noopener"><div class="nm">ComplianceJunction</div><div class="dd">Healthcare compliance training platform (HIPAA, OSHA, cybersecurity).</div><div class="rr"><span class="sec">Healthtech</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://recarbon.it/" target="_blank" rel="noopener"><div class="nm">RECARBON</div><div class="dd">Circular economy for carbon fiber: aerospace, automotive, industrial.</div><div class="rr"><span class="sec">Industrial</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://siriusavcap.com/" target="_blank" rel="noopener"><div class="nm">Sirius Aviation Capital</div><div class="dd">Aircraft leasing, financing and advisory.</div><div class="rr"><span class="sec">Aviation finance</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.bomberlab.com/" target="_blank" rel="noopener"><div class="nm">Bomberlab</div><div class="dd">Sport and corporate services platform.</div><div class="rr"><span class="sec">Sport</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.juniorentrepreneur.ie/" target="_blank" rel="noopener"><div class="nm">Junior Entrepreneur Programme</div><div class="dd">Education programme, primary-school entrepreneurship (Ireland).</div><div class="rr"><span class="sec">Education · IE</span><span class="go">Visit ↗</span></div></a>
+  </section>
+
+  <section>
+    <div class="sh"><span class="n">04</span><h2>Custom builds &amp; dashboards</h2><span class="note">interactive products &amp; internal tools</span></div>
+    <a class="item" href="https://ortomio-five.vercel.app/" target="_blank" rel="noopener"><div class="nm">Ortomio <span class="tag">personal</span></div><div class="dd">Custom isometric garden-planner web app. Self-designed pixel-art assets, interactive tile editor and seasonal logic, front-end and build.</div><div class="rr"><span class="sec">Web app</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://www.jepteacher.ie/" target="_blank" rel="noopener"><div class="nm">JEP Teacher <span class="tag">dashboard</span></div><div class="dd">Members-only Webflow dashboard for managing teaching materials and events. Public page shown; tool sits behind login.</div><div class="rr"><span class="sec">Dashboard</span><span class="go">Visit ↗</span></div></a>
+    <a class="item" href="https://elysianskinvoyage.com/" target="_blank" rel="noopener"><div class="nm">Elysian Skin Voyage <span class="tag">personal</span></div><div class="dd">My skincare editorial and affiliate blog: content, SEO and build.</div><div class="rr"><span class="sec">Editorial</span><span class="go">Visit ↗</span></div></a>
+  </section>
+
+  <section>
+    <div class="sh"><span class="n">05</span><h2>Archive</h2><span class="note">sites since retired, screenshots from the versions I built</span></div>
+    <div class="gal">
+      <figure><img src="images/wopmob.jpg" alt="WopMob Records" loading="lazy"><figcaption><span class="fn">WopMob Records</span><span class="fs">Music</span></figcaption></figure>
+      <figure><img src="images/gln.jpg" alt="GLN Lounge Network" loading="lazy"><figcaption><span class="fn">GLN Lounge Network</span><span class="fs">Web3</span></figcaption></figure>
+      <figure><img src="images/smilesss.jpg" alt="Smilesss" loading="lazy"><figcaption><span class="fn">Smilesss</span><span class="fs">NFT</span></figcaption></figure>
+      <figure><img src="images/endangered.jpg" alt="Endangered Labs" loading="lazy"><figcaption><span class="fn">Endangered Labs</span><span class="fs">Web3</span></figcaption></figure>
+      <figure><img src="images/retrievers.jpg" alt="Retrievers" loading="lazy"><figcaption><span class="fn">Retrievers</span><span class="fs">NFT</span></figcaption></figure>
+      <figure><img src="images/shortcut.jpg" alt="Shortcut Billionaires" loading="lazy"><figcaption><span class="fn">Shortcut Billionaires</span><span class="fs">NFT</span></figcaption></figure>
+      <figure><img src="images/apeventura.jpg" alt="Ape Ventura" loading="lazy"><figcaption><span class="fn">Ape Ventura</span><span class="fs">Web3</span></figcaption></figure>
+      <figure><img src="images/vqueen.jpg" alt="VQueen" loading="lazy"><figcaption><span class="fn">VQueen</span><span class="fs">NFT</span></figcaption></figure>
+    </div>
+    <p class="also">Also worked with, site since retired: <b>Coolman Babies</b>.</p>
+  </section>
+
+  <footer>
+    <div class="big">Open to new projects and long-term collaborations.</div>
+    <div class="fc">
+      <a href="mailto:alessia.fant93@gmail.com">alessia.fant93@gmail.com</a>
+      <a href="https://linkedin.com/in/afant">linkedin.com/in/afant</a>
+      <span style="color:var(--faint)">+39 348 416 0282</span>
+    </div>
+    <div class="note">Some projects were delivered under NDA or for agencies and are described without client-confidential detail.</div>
+  </footer>
+</div>
