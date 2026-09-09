@@ -57,6 +57,12 @@
   figcaption .fs{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--faint);text-transform:uppercase;}
   .also{margin-top:20px;font-size:14px;color:var(--soft);}
   .also b{color:var(--ink);font-weight:600;}
+  .cool{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .cool a{display:block;position:relative;border:1px solid var(--line);}
+  .cool a:hover{border-color:var(--accent);}
+  .cool img{display:block;width:100%;height:auto;}
+  .cool .cl{position:absolute;top:10px;right:10px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:#fff;background:rgba(26,26,23,.72);padding:4px 9px;border-radius:4px;}
+  @media(max-width:720px){.cool{grid-template-columns:1fr;}}
 
   footer{padding:48px 0 72px;margin-top:30px;border-top:1px solid var(--line);}
   footer .big{font-size:clamp(22px,4vw,32px);font-weight:800;letter-spacing:-0.02em;}
@@ -136,8 +142,14 @@
       <figure><img src="images/shortcut.jpg" alt="Shortcut Billionaires" loading="lazy"><figcaption><span class="fn">Shortcut Billionaires</span><span class="fs">NFT</span></figcaption></figure>
       <figure><img src="images/apeventura.jpg" alt="Ape Ventura" loading="lazy"><figcaption><span class="fn">Ape Ventura</span><span class="fs">Web3</span></figcaption></figure>
       <figure><img src="images/vqueen.jpg" alt="VQueen" loading="lazy"><figcaption><span class="fn">VQueen</span><span class="fs">NFT</span></figcaption></figure>
-      <figure><img src="images/coolman-dark.jpg" alt="Coolman Babies, dark theme" loading="lazy"><figcaption><span class="fn">Coolman Babies</span><span class="fs">NFT · dark</span></figcaption></figure>
-      <figure><img src="images/coolman-light.jpg" alt="Coolman Babies, light theme" loading="lazy"><figcaption><span class="fn">Coolman Babies</span><span class="fs">NFT · light</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="sh"><span class="n">06</span><h2>Coolman Babies</h2><span class="note">the dark / light theme switch I built, full pages (click to open)</span></div>
+    <div class="cool">
+      <a href="images/coolman-dark.jpg" target="_blank" rel="noopener"><img src="images/coolman-dark.jpg" alt="Coolman Babies, dark theme, full page" loading="lazy"><span class="cl">Dark theme ↗</span></a>
+      <a href="images/coolman-light.jpg" target="_blank" rel="noopener"><img src="images/coolman-light.jpg" alt="Coolman Babies, light theme, full page" loading="lazy"><span class="cl">Light theme ↗</span></a>
     </div>
   </section>
 
